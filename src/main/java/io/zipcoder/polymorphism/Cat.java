@@ -1,8 +1,14 @@
 package io.zipcoder.polymorphism;
 
-import io.zipcoder.polymorphism.Pets;
+public class Cat extends Pet {
 
-public class Cat extends Pets {
+    public Cat(String name){
+        super(name);
+    }
 
-    public Cat(String name){super(name);}
+    public String speak(){
+        System.out.println("meow");
+        return "meow";
+    }
 }
+
